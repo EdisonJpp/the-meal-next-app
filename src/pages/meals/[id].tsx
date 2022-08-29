@@ -23,7 +23,7 @@ function getItems(meal: IMeal, key = 'strIngredient') {
   return rawIngredients.filter(Boolean);
 }
 
-export default function MealDetail({ meal }: Props) {
+export default function MealDetail({ meal = {} as IMeal }: Props) {
   const ingredients = useMemo(() => getItems(meal), [meal]);
   const measures = useMemo(() => getItems(meal, 'strMeasure'), [meal]);
 
