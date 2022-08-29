@@ -14,7 +14,7 @@ module.exports = {
   ],
   rules: {
     'require-jsdoc': [
-      'error',
+      'off',
       {
         require: {
           FunctionDeclaration: true,

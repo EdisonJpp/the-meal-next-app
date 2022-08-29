@@ -2,11 +2,14 @@
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
-  compiler: {
-    removeConsole: {
-      exclude: ['error'],
-    },
+  images: {
+    domains: ['www.themealdb.com'],
   },
+  // compiler: {
+  //   removeConsole: {
+  //     exclude: ['error'],
+  //   },
+  // },
 };
 
 module.exports = nextConfig;
