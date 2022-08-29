@@ -15,9 +15,9 @@ enum StatusCode {
 const headers: Readonly<Record<string, string | boolean>> = {
   Accept: 'application/json',
   'Content-Type': 'application/json; charset=utf-8',
-  // 'Access-Control-Allow-Credentials': true,
+  'Access-Control-Allow-Credentials': true,
   'Access-Control-Allow-Origin': '*',
-  // 'X-Requested-With': 'XMLHttpRequest',
+  'X-Requested-With': 'XMLHttpRequest',
 };
 
 // We can use the following function to inject the JWT token through an interceptor
